@@ -1,2 +1,2 @@
-# Javascript
-Complete JavaScipt.
+#Complete JavaScirpt.
+
