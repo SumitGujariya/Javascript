@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chai aur code teaching me DOM</title>
+  </head>
+  <body style="background-color: #212121; color: #fff">
+    <ul class="language">
+      <li class="data">Javascript</li>
+    </ul>
+  </body>
+  <script>
+    function addLanguage(langName) {
+      const li = document.createElement("li");
+      li.innerHTML = `${langName}`;
+      document.querySelector(".language").appendChild(li); // you can append also with this method.
+    }
+    addLanguage("Python");
+    addLanguage("Typescript");
+
+    function addOptiLanguage(langName) {
+      const li = document.createElement("li");
+      li.appendChild(document.createTextNode(langName));
+      document.querySelector(".language").appendChild(li); // this one easy to implement and readable.
+    }
+    addOptiLanguage("Golang");
+
+    //Edit
+    const secondLang = document.querySelector("li:nth-child(2)");
+    console.log(secondLang);
+    //secondLang.innerHTML = "Mojo"
+
+    const neewli = document.createElement("li");   // Replace the old element with new element or current element
+    neewli.textContent = "Mojo";
+    secondLang.replaceWith(neewli);
+
+    //edit
+    const firstLang = document.querySelector("li:first-child"); // Another method to change the given value
+    firstLang.outerHTML = "<h1>tu madarchod h sumit</h1>";
+
+    //remove
+    const lastLang = document.querySelector("li:last-child") // For remove the value
+    lastLang.remove()
+    
+  </script>
+</html>
