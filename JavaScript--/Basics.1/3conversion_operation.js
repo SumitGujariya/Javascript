@@ -72,3 +72,18 @@ let gameCounter = 199
 ++gameCounter; // Prefix
 gameCounter++; // Postfix
 // console.log(gameCounter); // (The output is = 200) It's gives same result/output with both method.
+
+
+// Best example of Prefix and Postfix
+// Prefix
+let x = 3
+const y = x++
+console.log(`x:${x}, y:${y}`);
+
+// Postfix
+let a = 3
+const b = ++a
+console.log(`a:${a}, b:${b}`);
+
+
+
