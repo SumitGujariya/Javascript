@@ -57,7 +57,7 @@ let str3 = str1 + str2
 // console.log("1" + 2 + 2); // if string comes first they treat all like string. the output is = 122
 // console.log(1 + 2 + "2"); // if string comes in last so they complete the conversion first. the output is = 32
 
-// console.log( (3 + 4) * 5 % 3);
+// console.log( (3 + 4) * 5 % 3); // Use bracets.
 
 // console.log(+true);
 // console.log(+"");
@@ -67,6 +67,8 @@ num1 = num2 = num3 = 2 + 2
 
 // console.log(num1);
 
+// It's tricky question some times companies ask what's the output of the gamecounter.
 let gameCounter = 199
-gameCounter++;
-// console.log(gameCounter);  
+++gameCounter; // Prefix
+gameCounter++; // Postfix
+// console.log(gameCounter); // (The output is = 200) It's gives same result/output with both method.
