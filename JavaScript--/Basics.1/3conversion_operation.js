@@ -1,8 +1,7 @@
-let score = undefined
+let score = "33abc"
 
-
-// console.log(typeof score);
-// console.log(typeof (score));
+// console.log(typeof score); // you can write the score wtih the help of both method the first one 
+// console.log(typeof (score)); // second one in brecets
 
 let valueInNumber = Number(score)
 // console.log(typeof valueInNumber);
@@ -63,4 +62,4 @@ num1 = num2 = num3 = 2 + 2
 
 let gameCounter = 199
 gameCounter++;
-console.log(gameCounter);
+// console.log(gameCounter);
